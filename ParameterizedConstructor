@@ -1,0 +1,32 @@
+using System;
+namespace constructor
+{
+ internal class Program
+    {
+        int a,b;
+        string str;
+        float f;
+        bool B;
+
+        // now we create a constructor for initialized the variable of class 1
+        public Program(int a,int b, float f,string str ,bool B) // Default constructor or parameter less or implicit constructor 
+        {
+            this.a = a;
+            this.b= b;
+            this.f = f;
+            this.str = str;
+            this.B = B;     
+        }
+        static void Main()
+        {
+            Program program = new Program(45,56,4.5f,"hii",false);
+            Console.WriteLine(program.a); 
+            Console.WriteLine(program.b); 
+            Console.WriteLine(program.f);
+            Console.WriteLine(program.str);
+            Console.WriteLine(program.B);
+            Console.ReadLine();
+        }
+    }
+    
+}
